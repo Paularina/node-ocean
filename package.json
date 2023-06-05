@@ -11,5 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paularina/node-ocean.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Paularina/node-ocean/issues"
+  },
+  "homepage": "https://github.com/Paularina/node-ocean#readme"
 }

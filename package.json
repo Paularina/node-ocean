@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Paularina/node-ocean/issues"
   },
-  "homepage": "https://github.com/Paularina/node-ocean#readme"
+  "homepage": "https://github.com/Paularina/node-ocean#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }

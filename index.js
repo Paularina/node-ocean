@@ -1,7 +1,7 @@
 const { MongoClient , ObjectId } = require('mongodb');
 const express = require("express");
 
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb+srv://paularinadev:C2kasArZHF52Qv7f@node-ocean.rvdnybf.mongodb.net/?retryWrites=true&w=majority';
 const client = new MongoClient(url);
 
 const dbName = 'ocean-node'
@@ -78,12 +78,12 @@ app.delete("/herois/:id", async function(req, res){
     _id: new ObjectId(id),
   })
   
-  res.send("Deletado com sucesso!");
+  res.send("Deletado com sucesso");
 });
 
 
 //APP LISTEN
-app.listen(3333, function(){
+app.listen(process.env.PORT || 3333, function(){
   console.log('aplicacao funcionando e rodando na porta 3333')
 });
 
